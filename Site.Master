@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebChatBot.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %>-Tìm kiếm</title>
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/custom.css" />
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+    <form runat="server">        
+       
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p class="align-content-center">&copy; <%: DateTime.Now.Year %> - CHATBOT-Tra cứu BHBV</p>
+            </footer>
+       
+
+    </form>
+
+    
+</body>
+</html>
